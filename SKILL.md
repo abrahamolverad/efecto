@@ -99,5 +99,5 @@ Los nombres en inglés de la skill original también funcionan (`orbit`, `spotli
 - Los efectos corren en el orden del plan. Pon primero los de cámara (`en-la-mira`, `zoom-rapido`, `reflector`) cuando se encimen con otros.
 - El zoom nunca pasa de 2x, para que el video siga nítido.
 - Si la cara queda muy abajo en el cuadro, los textos bajo la barbilla pueden caer en la zona de la caption de Instagram: recorta el video para subirla (por ejemplo `crop=916:1628:82:180,scale=1080:1920` con ffmpeg) antes de aplicar el efecto.
-- La skill solo agrega imagen. Los efectos de sonido y los subtítulos los pone el usuario (o la skill `captions`).
+- La skill solo agrega imagen. Los efectos de sonido y los subtítulos los pone el usuario.
 - Son versiones iniciales. Sé honesto si el usuario las compara con un reel que vio.
