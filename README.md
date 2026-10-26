@@ -1,8 +1,6 @@
-# efecto: 42 efectos de video para Claude Code, en español
+# efecto: 42 efectos de video para Claude Code
 
 Sube tu video a Claude Code, escribe `/efecto` y el nombre de un efecto. Esa es toda la edición.
-
-Basada en [claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) de [@vibha.in.progress](https://instagram.com/vibha.in.progress) (licencia MIT). Esta versión traduce los comandos, los textos de pantalla y la guía al español.
 
 ## Instalación (una línea)
 
@@ -47,6 +45,6 @@ Más los looks `reflector-dorado`, `portada-editorial` y `panel-de-vidrio`. La l
 
 Claude no «ve» video: la skill edita el archivo con código (Python y ffmpeg) en tu computadora. Para usarla desde el iPhone, deja Claude Code abierto en tu Mac con Remote Control (`/remote-control`) y escríbele desde la app de Claude; las sesiones en la nube no ven las skills de tu Mac.
 
-## Créditos y licencia
+## Licencia
 
-Efectos originales: Vibha Ramprakash, [claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) (MIT). Traducción y adaptación al español: Abraham Olvera ([@abrahamolvera.ai](https://www.instagram.com/abrahamolvera.ai/)). Licencia MIT (ver `LICENSE`); fuentes y modelos con sus propias licencias (ver `fonts/` y `models/NOTICE.md`).
+MIT (ver `LICENSE`). Las fuentes y los modelos tienen sus propias licencias (ver `fonts/` y `models/NOTICE.md`).

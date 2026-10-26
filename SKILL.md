@@ -3,9 +3,7 @@ name: efecto
 description: Agrega a un video vertical donde hablas a cámara cualquiera de 42 efectos de video (órbita, reflector, widgets de vidrio, línea de tiempo, lista, muro de titulares, comentario, abanico de teléfonos, gráfica de vidrio, corte de noticias, interruptores del iPhone, letrero LED y más). Los efectos siguen tu cara y pueden ir detrás de tu cabeza. Úsala cuando el usuario escriba /efecto, nombre uno de los efectos o pida agregar un efecto, zoom, color, sticker o animación a su video.
 ---
 
-# efecto: 42 efectos de video en español
-
-Basada en [claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) de @vibha.in.progress (licencia MIT), traducida y adaptada al español.
+# efecto: 42 efectos de video
 
 Casi siempre el usuario no es técnico. Responde corto y amable, haz el trabajo por él y nunca le pidas que corra comandos.
 
@@ -19,7 +17,7 @@ Corre `bash scripts/setup.sh`. Imprime `READY` cuando termina (la primera vez ta
 
 ## 2. El video y el efecto
 - Video: el usuario lo arrastra al chat o da una ruta. Funciona mejor un video vertical de teléfono.
-- Efecto: el de `/efecto <nombre>`, o el que describa. Busca sus palabras en la tabla de abajo (acepta el nombre en español o en inglés). ¿No está claro? Enséñale la lista.
+- Efecto: el de `/efecto <nombre>`, o el que describa. Busca sus palabras en la tabla de abajo. ¿No está claro? Enséñale la lista.
 
 ## 3. Encontrar el momento
 - Si dice «en la palabra X» o «cuando digo...», corre `.venv/bin/python scripts/words.py <video>` y usa esos tiempos.
@@ -27,7 +25,7 @@ Corre `bash scripts/setup.sh`. Imprime `READY` cuando termina (la primera vez ta
 - Las ventanas cortas se ven mejor: de 1.5 a 4 segundos por efecto.
 
 ## 4. Borrador, revisión y render
-1. Escribe el plan junto a su video como `<nombre-del-video>_efectos.json` (el campo `fx` acepta el nombre en español):
+1. Escribe el plan junto a su video como `<nombre-del-video>_efectos.json` (el campo `fx` lleva el nombre del efecto):
    ```json
    {"effects": [
      {"fx": "orbita", "start": 3.2, "end": 6.0},
@@ -92,7 +90,6 @@ Un solo efecto no necesita plan: `.venv/bin/python scripts/fx.py orbita <video> 
 - `panel-de-vidrio` = `grafica` con `look=bento`: la gráfica sube en una pantalla de vidrio ahumado detrás de tu cabeza, con fichas de vidrio delante de ti (dona, KPI, barras). `text`, `from`, `to`, `donut` (`29%::etiqueta`), `kpi` (`672K::etiqueta`), `bars` (`197\|140\|124::etiqueta`).
 - `interruptores` va arriba de ti, metido detrás de tu cabeza, con un zoom suave (`pos=below` para la tarjeta bajo la barbilla; `overlap`, `zoom`).
 
-Los nombres en inglés de la skill original también funcionan (`orbit`, `spotlight`, `glass-widgets`, `glitter-spotlight`...).
 
 ## Reglas
 - Nunca tapes la cara. Todo va detrás de la persona o la esquiva solo; si un cuadro de revisión todavía muestra texto sobre la cara, muévelo (`x`, `y`) o acorta el texto.

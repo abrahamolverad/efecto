@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""efecto: 42 efectos de video para Claude Code, en español.
-Basado en claude-video-effects de @vibha.in.progress (MIT, github.com/Vibha-Ramprakash/claude-video-effects).
+"""efecto: 42 efectos de video para Claude Code.
 
 One effect:    python fx.py orbit in.mp4 out.mp4 --start 3.2 --end 6
 Many effects:  python fx.py --plan plan.json in.mp4 out.mp4
@@ -35,7 +34,7 @@ ALIASES = {'the-noise': 'noise', 'the-lineup': 'lineup', 'bill': 'the-bill', 'to
            'toggles': 'apple-toggles', 'led': 'led-sign', 'push': 'slow-push', 'push-in': 'slow-push'}
 LOOK_NAMES = {'glitter-spotlight': ('spotlight', 'sparkle'), 'glitter': ('spotlight', 'sparkle')}  # a named look of another effect
 
-# Spanish command names (the skill is used as /efecto <nombre>); the English names keep working.
+# command names used as /efecto <nombre> (the internal effect names keep working too)
 ES_NAMES = {
     'noise': ('ruido', 'tus reels se apilan detrás de tu cabeza, uno cada cuarto de segundo'),
     'lineup': ('fila', 'fichas numeradas se abren en abanico sobre tu cabeza'),
